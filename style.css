@@ -1,0 +1,211 @@
+@charset "UTF-8";
+body {
+	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
+	background-color: #e8e9f2;
+	margin: 0;
+	padding: 0;
+	color: #333;
+	background-image: url(img/creampaper.png);
+	font-family: 'Roboto Slab', Verdana, Geneva, sans-serif;
+}
+
+/* ~~ Element/tag selectors ~~ */
+ul, ol, dl { /* Due to variations between browsers, it's best practices to zero padding and margin on lists. For consistency, you can either specify the amounts you want here, or on the list items (LI, DT, DD) they contain. Remember that what you do here will cascade to the .nav list unless you write a more specific selector. */
+	padding: 0;
+	margin: 0;
+}
+h1, h2, h3, h4, h5, h6, p {
+	margin-top: 0;	 /* removing the top margin gets around an issue where margins can escape from their containing div. The remaining bottom margin will hold it away from any elements that follow. */
+	padding-right: 15px;
+	padding-left: 15px; /* adding the padding to the sides of the elements within the divs, instead of the divs themselves, gets rid of any box model math. A nested div with side padding can also be used as an alternate method. */
+}
+a img { /* this selector removes the default blue border displayed in some browsers around an image when it is surrounded by a link */
+	border: none;
+}
+a:visited {
+	text-decoration: none;
+}
+a:hover, a:active, a:focus { /* this group of selectors will give a keyboard navigator the same hover experience as the person using a mouse. */
+	text-decoration: none;
+}
+
+/* ~~ this fixed width container surrounds all other divs~~ */
+.container {
+	width: 960px;
+	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
+	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
+}
+.nav .search {
+	background-color: #e5e5e5;
+	width: 250px;
+	height: 40px;
+	float: right;
+	-webkit-border-bottom-right-radius: 2px;
+	-moz-border-radius-bottomright: 2px;
+	border-bottom-right-radius: 2px;
+	
+
+}
+
+.carousel{
+	margin: 20px 0px;
+	width: 960px;
+	height: 300px;
+	float: left;
+	background-color: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	
+}
+
+.box-container {
+	float: left;
+	width: 960;
+	height: 150;
+}
+
+.navbox{
+	width: 225px;
+	height: 250px;
+	background-color: #fff;
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+	margin-right: 20px;
+	float: left;
+}
+
+.navbox .title{
+	height: 25px;
+	background-color: #051526;
+	-moz-border-radius-topleft: 3px;
+	-webkit-border-top-left-radius: 3px;
+	border-top-left-radius: 3px;
+	-moz-border-radius-topright: 3px;
+	-webkit-border-top-right-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+.navbox .inner{
+	height: 225px;
+	width: 225;
+}
+
+.rt{
+	margin: 0;
+}
+
+.content {
+	margin: 10px 0;
+	width: 960px;
+	height: 800px;
+	float: left;
+}
+.nav form {
+	margin: 5px;
+	float: left;	
+	width: 250px;
+}
+.nav .search .qr {
+	height: 28px;
+	width: 225px;
+	border: none;
+	-moz-border-radius: 1px;
+	-webkit-border-radius: 1px;
+	border-radius: 1px;
+}
+.nav .search .btn {
+	background-color: green;
+	background-image: url(img/search.png);
+	width: 30px;
+	height: 30px;
+	border: none;
+}
+.header  .logo {
+	float: left;
+	margin-left: 10px;
+	margin-top: 15px;
+}
+.header  .utilities {
+	font-size: 11px;
+	position: absolute;
+	top: 0px;
+	right: 0px;
+}
+.footer .container {
+	border-top: 1px solid #051526;
+}
+.footinfo ul {
+	float: left;
+	list-style-type: none;
+	display: block;
+	font-size: 10px;
+}
+.footinfo ul li {
+	float: left;
+	margin-left:10px;
+}
+.footinfo a {
+	color: #051526;
+	text-decoration: none;
+}
+
+.footinfo a:visited {
+	color: #051526;
+	text-decoration: none;
+}
+
+.footinfo a:hover, a:active, a:focus {
+	color: #051526;
+	text-decoration: none;
+}
+
+
+.nav {
+	width: 960px;
+	float: left;
+	display: block;
+	color: #FFF;
+	text-align: center;
+	background-color: #ced8d8;
+	-webkit-border-bottom-right-radius: 3px;
+	-webkit-border-bottom-left-radius: 3px;
+	-moz-border-radius-bottomright: 3px;
+	-moz-border-radius-bottomleft: 3px;
+	border-bottom-right-radius: 3px;
+	border-bottom-left-radius: 3px;
+	font-family: 'Pacifico', Verdana, Geneva, sans-serif;
+}
+
+/* ~~ This grouped selector gives the lists in the .content area space ~~ */
+.content ul, .content ol { 
+	padding: 0 15px 15px 40px; /* this padding mirrors the right padding in the headings and paragraph rule above. Padding was placed on the bottom for space between other elements on the lists and on the left to create the indention. These may be adjusted as you wish. */
+}
+body {
+}
+.header {
+	background-color: #051526;
+	height: 130px;
+	border-bottom: solid 3px #ced8d8;
+}
+.nav .navi  {
+	float: left;
+	display: block;
+	padding-top: 5px;
+	height: 25px;
+	width: 180px;
+	color: #FFF;
+	font-weight: 700;
+	text-align: center;
+	font-size: 17px;
+}
+.nav .hm{
+	width: 60px;	
+}
+.footer .footinfo {
+	float: right;
+}
+.footer .container .footinfo {
+	float: right;
+}
