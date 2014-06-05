@@ -1,12 +1,12 @@
 @charset "UTF-8";
 body {
 	font: 100%/1.4 Verdana, Arial, Helvetica, sans-serif;
-	background-color: #e8e9f2;
-	margin: 0;
-	padding: 0;
+	background-color: #001e30; #06223c; #18181A;#303030;
+	margin: 0 auto;
+	padding: 5% 5% 0 5%;
 	color: #333;
 	background-image: url(img/creampaper.png);
-	font-family: 'Roboto Slab', Verdana, Geneva, sans-serif;
+	font-family: 'Raleway', Verdana, Geneva, sans-serif;
 }
 
 /* ~~ Element/tag selectors ~~ */
@@ -31,7 +31,8 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 
 /* ~~ this fixed width container surrounds all other divs~~ */
 .container {
-	width: 960px;
+	width: 1240px;
+	height: 697px;
 	margin: 0 auto; /* the auto value on the sides, coupled with the width, centers the layout */
 	overflow: hidden; /* this declaration makes the .container understand where the floated columns within ends and contain them */
 }
@@ -124,8 +125,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 }
 .header  .logo {
 	float: left;
-	margin-left: 10px;
-	margin-top: 15px;
+	margin-top: 5px;
 }
 .header  .utilities {
 	font-size: 11px;
@@ -185,9 +185,7 @@ a:hover, a:active, a:focus { /* this group of selectors will give a keyboard nav
 body {
 }
 .header {
-	background-color: #051526;
-	height: 130px;
-	border-bottom: solid 3px #ced8d8;
+	height: 180px;
 }
 .nav .navi  {
 	float: left;
@@ -208,4 +206,130 @@ body {
 }
 .footer .container .footinfo {
 	float: right;
+}
+
+
+.logo {
+	float: left;
+	width: 240px;
+		
+}
+
+.continfo {
+	padding-top: 5px;
+	float: right;
+	width: 1000px;
+	color: #fff;
+}
+
+.continfo span {
+	clear: both;
+	float: right;
+}
+
+.continfo .address {
+	font-size: 18px;
+	font-weight: 100;
+}
+
+.continfo .mail {
+	font-size: 20px;
+	font-weight: bolder;
+}
+
+.continfo .phonenum {
+	font-size: 20px;
+	font-style: normal;
+}
+
+.continfo .twitteraddr {
+	font-size: 19px;
+	font-weight: 900;
+	
+}
+
+.mainframe {
+	float: left;
+	
+}
+
+.mainframe .slog {
+	color: #dedede;
+	width: 628px;height: 150px;	
+	font-family: 'Holtwood One SC', sans-serif;
+	padding-left: 118px;
+	margin: 0 auto;
+}
+
+.mainframe .fst {
+	padding-right: 10px;
+	padding-left: 150px;
+	color: #fff;
+	font-size: 20px;
+}
+
+.mainframe .w1 {
+	width: 120px;
+	font-size: 35px;
+	font-weight: bold;
+	col
+}
+
+.mainframe .w2 {
+	width: 180px;
+	font-size: 40px;
+	padding-left: 70px;
+}
+
+.mainframe .w3 {
+	font-size: 45px;
+	padding-left: 10px;
+}
+
+.mainframe .w4 {
+	font-size: 30px;
+	font-weight: bolder;
+}
+
+.mainframe .w5 {
+	font-size: 35px;
+	font-weight: bold;
+}
+
+.mainframe .w6 {
+	font-size: 27px;
+	padding-left: 5px;
+}
+
+.mainframe .lst {
+	color : #fff;
+	font-size: 24px;
+	padding-left: 290px;
+}
+
+.mainframe .about {
+	padding-top: 150px;
+	font-size: 33px;
+	color: #fff;
+}
+
+.about a {
+	text-decoration: underline;
+	color: #fff;
+}
+
+.footer {
+	position: relative;
+	float: right;
+	width: 960;
+}
+
+.footer span {
+	position: 0;
+	color: #fff;
+	float: right;
+}
+
+.footer a {
+	color: #fff;
 }
